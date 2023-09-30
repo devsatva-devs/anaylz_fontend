@@ -1,0 +1,42 @@
+.connectors_root {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.connectors_titleDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.folder_icon {
+    color: #F9C53E;
+    height: 24px;
+    width: 24px;
+}
+
+.add_icon_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    margin-left: 4px;
+    background-color: #253042;
+    border-radius: 4px;
+}
+
+.add_icon {
+    font-size: 18px !important;
+    color: #AEB6C4;
+}
+
+.connector_card_root {
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    row-gap: 30px;
+    column-gap: 50px;
+}

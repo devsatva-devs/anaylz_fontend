@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.cardWrapper{
+    background-color: #253042;
+    padding:2rem; 
+    border-radius: 1rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.titleText{
+    font-size: 1.25rem !important;
+    font-family: 'Inter' !important;
+    font-weight: 600 !important;
+    line-height: 2rem !important;
+    color: #FFFFFF !important;
+}
+.cardRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}

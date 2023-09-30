@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "InterBlack";
+  src:
+    url("./assets/fonts/Inter-Black.ttf") format("truetype");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "InterBold";
+  src:
+    url("./assets/fonts/Inter-Bold.ttf") format("truetype");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "InterExtraBold";
+  src:
+    url("./assets/fonts/Inter-ExtraBold.ttf") format("truetype");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "InterExtraLight";
+  src:
+    url("./assets/fonts/Inter-ExtraLight.ttf") format("truetype");
 }
-
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: "InterLight";
+  src:
+    url("./assets/fonts/Inter-Light.ttf") format("truetype");
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "InterMedium";
+  src:
+    url("./assets/fonts/Inter-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  src:
+    url("./assets/fonts/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InterSemiBold";
+  src:
+    url("./assets/fonts/Inter-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InterThin";
+  src:
+    url("./assets/fonts/Inter-Thin.ttf") format("truetype");
 }
