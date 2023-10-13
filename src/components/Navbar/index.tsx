@@ -11,11 +11,9 @@ import Logo from "../../assets/images/logo.svg";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 import { ROUTE_PATH_MAP } from "../../utils/enum";
 import { Grid, Icon, List, ListItem } from "@mui/material";
 import { TypographyBodyDefault } from "../Typography";
-
 
 export const navbarList = [
   {
@@ -28,19 +26,16 @@ export const navbarList = [
     label: "Connectors",
     value: ROUTE_PATH_MAP.CONNECTORS,
   },
-  
 ];
 
 function Navbar() {
   const navigate = useNavigate();
-  
+
   const [active, setActive] = useState("");
- 
+
   useEffect(() => {
     setActive(window.location.pathname);
-  
   });
-
 
   return (
     <Grid
@@ -71,9 +66,9 @@ function Navbar() {
           onClick={() => navigate(ROUTE_PATH_MAP.HOME)}
           src={Logo}
           style={{ width: "40px", height: "40px", cursor: "pointer" }}
+          alt=""
         />
         <List sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          
           {navbarList.map((page, index) => {
             return (
               <ListItem
@@ -82,7 +77,7 @@ function Navbar() {
                   display: "flex",
                   padding: "8px 4px",
                   flexDirection: "column",
-                  cursor:'pointer',
+                  cursor: "pointer",
                   gap: "4px",
                   background:
                     active === page.value
@@ -126,10 +121,7 @@ function Navbar() {
             );
           })}
         </List>
-        <img
-          src={Logo}
-          style={{ width: "40px", height: "40px", opacity: 0 }}
-        />
+        <img src={Logo} style={{ width: "40px", height: "40px", opacity: 0 }} />
       </Grid>
     </Grid>
   );
